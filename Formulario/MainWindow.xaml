@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:Formulario"
         mc:Ignorable="d"
         Icon="assets/Icono.ico"
-        Title="7.3.Formulario" Height="450" Width="800">
+        Title="7.3.Formulario" Height="550" Width="850" MinHeight="550" MinWidth="850">
     <DockPanel>
-        <TextBlock DockPanel.Dock="Top" TextAlignment="Center">Formulario</TextBlock>
+        <TextBlock DockPanel.Dock="Top" TextAlignment="Center" FontWeight="Bold" FontSize="40">Formulario</TextBlock>
         <DockPanel Margin="10" DockPanel.Dock="Bottom">
-            <TextBlock DockPanel.Dock="Left" FontSize="18" FontStyle="Italic">Pau Sansó</TextBlock>
+            <TextBlock DockPanel.Dock="Left" FontSize="20" FontStyle="Italic">Pau Sansó</TextBlock>
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
                 <Button Padding="15,2" Margin="0,0,5,0">Aceptar</Button>
                 <Button Padding="15,2">Cancelar</Button>
@@ -18,7 +18,81 @@
         </DockPanel>
         <Image DockPanel.Dock="Right" Source="assets/foto.jpg"/>
         <StackPanel>
-            
+            <StackPanel>
+                <Border Margin="5,0,10,0" Background="CadetBlue" CornerRadius="3" BorderThickness="3" BorderBrush="Black" Padding="5">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Left">
+                            <TextBlock Margin="5">Nombre</TextBlock>
+                            <TextBlock Margin="5">Edad</TextBlock>
+                            <TextBlock Margin="5">Dirección</TextBlock>
+                        </StackPanel>
+                        <StackPanel DockPanel.Dock="Right">
+                            <Image ToolTip="Máximo 100 caracteres" Margin="0,5,0,0" Source="assets/info.png" Height="15"/>
+                            <Image ToolTip="Número entero entre 0 y 100" Margin="0,15,0,0" Source="assets/info.png" Height="15"/>
+                            <Image ToolTip="Incluir el código postal" Margin="0,13,0,0" Source="assets/info.png" Height="15"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox Margin="5"></TextBox>
+                            <TextBox Margin="5"></TextBox>
+                            <TextBox Margin="5"></TextBox>
+                        </StackPanel>
+                    </DockPanel>
+                </Border>
+                <Border Margin="5,10,10,0" Background="Bisque" CornerRadius="3" BorderThickness="3" BorderBrush="Black">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Border>
+                            <GroupBox Width="200" Padding="0,5" Margin="10" Header="Aficiones">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Margin="10,0,5,0"></CheckBox>
+                                    <TextBlock>Hacer Deporte</TextBlock>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Margin="10,0,5,0"></CheckBox>
+                                    <TextBlock>Viajar</TextBlock>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Margin="10,0,5,0"></CheckBox>
+                                    <TextBlock>Ver series</TextBlock>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Margin="10,0,5,0"></CheckBox>
+                                    <TextBlock>Leer comics</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                            </GroupBox>
+                        </Border>
+                        <Border>
+                            <GroupBox Width="200" Padding="0,5" Margin="10" Header="Estado civil">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton x:Name="solteroRadioButton" GroupName="estadoCivil" Margin="10,0,5,0"></RadioButton>
+                                        <TextBlock>Soltero</TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton GroupName="estadoCivil" Margin="10,0,5,0"></RadioButton>
+                                        <TextBlock>Casado</TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton GroupName="estadoCivil" Margin="10,0,5,0"></RadioButton>
+                                        <TextBlock>Divorciado</TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton GroupName="estadoCivil" Margin="10,0,5,0"></RadioButton>
+                                        <TextBlock>Viudo</TextBlock>
+                                    </StackPanel>
+                                </StackPanel>
+                            </GroupBox>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
         </StackPanel>
         
     </DockPanel>

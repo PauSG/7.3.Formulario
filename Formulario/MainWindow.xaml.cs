@@ -23,6 +23,7 @@ namespace Formulario
         public MainWindow()
         {
             InitializeComponent();
+            solteroRadioButton.IsChecked = true;
         }
     }
 }
