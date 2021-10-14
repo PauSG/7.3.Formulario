@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Icon="assets/Icono.ico"
         Title="7.3.Formulario" Height="550" Width="850" MinHeight="550" MinWidth="850">
-    <!-- El contenedor principal deberia ser un Grid y tener todo una estructura de tabla para que la imagen redimensione como debe.  -->
+    <!-- El contenedor principal deberia ser un Grid y tener todo una estructura de tabla para que la imagen redimensione como debe. o juntar los dos formularios y la imagen en un grid para que ambos sean el ultimo hijo del dock panel y puedan crecer a voluntad  -->
     <DockPanel>
         <TextBlock DockPanel.Dock="Top" TextAlignment="Center" FontWeight="Bold" FontSize="40">Formulario</TextBlock>
         <DockPanel Margin="10" DockPanel.Dock="Bottom">
