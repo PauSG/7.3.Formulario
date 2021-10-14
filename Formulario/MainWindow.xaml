@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Formulario"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Icon="assets/Icono.ico"
+        Title="7.3.Formulario" Height="450" Width="800">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" TextAlignment="Center">Formulario</TextBlock>
+        <DockPanel Margin="10" DockPanel.Dock="Bottom">
+            <TextBlock DockPanel.Dock="Left" FontSize="18" FontStyle="Italic">Pau Sansó</TextBlock>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
+                <Button Padding="15,2" Margin="0,0,5,0">Aceptar</Button>
+                <Button Padding="15,2">Cancelar</Button>
+            </StackPanel>
+        </DockPanel>
+        <Image DockPanel.Dock="Right" Source="assets/foto.jpg"/>
+        <StackPanel>
+            
+        </StackPanel>
         
-    </Grid>
+    </DockPanel>
 </Window>
